@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="res/css_valentina/aboutvalentina.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Karla:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutvalentina.html">About Me</a></li>
+                    <li><a href="vblog.html">Blog</a></li>
+                    <li><a href="valentina.html">Story</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="identity" class="flex">
+            <div id="banner" class="flex">
+                <h1>Valentina Panetta</h1>
+                <p>Fullstack Web Developer</p>
+            </div>
+            <div id="row" class="flex">
+                <div id="pink" class="box">
+                    <h2>HTML & CSS</h2>
+                    <p>Web Design</p>
+                </div>
+                <div id="blue" class="box">
+                    <h2>JavaScript</h2>
+                    <p>Website Functionalities</p>
+                </div>
+                <div id="lightpink" class="box">
+                    <h2>jQuery</h2>
+                    <p>Website Functionalities</p>
+                </div>
+                <div id="babyblue" class="box">
+                    <h2>Typescript</h2>
+                    <p>Website Functionalities</p>
+                </div>
+            </div>
+            <div id="row" class="flex">
+                <div id="white" class="box">
+                    <h2>My approach</h2>
+                    <p>Never stop learning and reach for the stars.</p>
+                </div>
+                <div id="image" class="box">
+                    <img src="res/img_valentina/valentina.png" alt="valentina">
+                </div>
+                <div id="lightblue" class="box">
+                    <h2>About me</h2>
+                    <p>Born in the northest part of Italy, I came to Austria seven years ago, I now live in the countryside with my partner and with my cat.</p>
+                </div>
+            </div>
+            <div id="works" class="flex">
+                <h2>My Works</h2>
+                <ul class="flex">
+                    <li><a href="#">CodeReview 1</a></li>
+                    <li><a href="#">CodeReview 2</a></li>
+                    <li><a href="#">CodeReview 3</a></li>
+                </ul>
+            </div>
+            <div id="quote" class="flex">
+                <blockquote>
+                    "There is no aspect, no facet, no moment of life that can’t be improved with pizza"
+                </blockquote>
+            </div>
+            <div id="contact" class="flex">
+                <h2>Let's get to know each other</h2>
+                <button id="button"><span>contact me</span></button>
+                <div id="modal">
+                    <div class="modal-content">
+                        <span id="close">&times;</span>
+                        <a>valentinaspanetta@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div id="footer" class="flex">
+            <p>©Copyright Valentina Panetta 2019</p>
+        </div>
+    </div>
+    <script>
+    var modal = document.getElementById("modal");
+    var button = document.getElementById("button");
+    var span = document.getElementById("close");
+
+    button.addEventListener('click', function() {
+        modal.style.display = "block";
+    }, false);
+
+    span.addEventListener('click', function() {
+        modal.style.display = "none";
+    }, false);
+    </script>
+</body>
+
+</html>

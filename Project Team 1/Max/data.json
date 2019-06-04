@@ -1,0 +1,8 @@
+var me = {
+	"firstName" : "Maximilian",
+	"lastName" : "Dirninger",
+	"email" : "maximilian@dirninger.com",
+	"project1" : "www.dirninger.com",
+	"project2" : "www.kino-groebming.at",
+	"salary" : 2300}
+

@@ -1,0 +1,16 @@
+var posts = [{
+"image": "res/img_valentina/venus.jpg",
+"title":"Lorem ipsum", 
+"description":"Curabiture vitae libero in ipsum porttitor consequat.",
+"link":"Read Me"
+},{
+"image": "res/img_valentina/flower.jpg",
+"title":"Lorem ipsum", 
+"description":"Curabiture vitae libero in ipsum porttitor consequat.",
+"link":"Read Me"
+},{
+"image": "res/img_valentina/wind.jpg",
+"title":"Lorem ipsum", 
+"description":"Curabiture vitae libero in ipsum porttitor consequat.",
+"link":"Read Me"
+}];

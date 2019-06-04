@@ -1,0 +1,25 @@
+var teamMembers = [{
+	"img" : "Max/max.jpg",
+	"name": "Maximilian",
+	"description": "Fullstack Web Developer",
+	"descriptionTwo": "Likes Kraken",
+	"link" : "Max/index.html"
+}, {
+	"img" : "Valentina/res/img_valentina/valentina.png",
+	"name": "Valentina",
+	"description": "Fullstack Web Developer",
+	"descriptionTwo": "Cats Enthusiast",
+	"link" : "Valentina/aboutvalentina.html"
+},{
+	"img" : "Fabian/Selfie.jpg",
+	"name": "Fabian",
+	"description": "Future Developer",
+	"descriptionTwo": "Fitness Enthusiast",
+	"link" : "Fabian/AboutMe.html"
+}, {
+	"img" : "Stephie/img_lor/tumblr.jpg",
+	"name": "Stephie",
+	"description": "Frontend Web Developer",
+	"descriptionTwo": "Chai Latte Lover",
+	"link" : "Stephie/Stephie.html"
+}];

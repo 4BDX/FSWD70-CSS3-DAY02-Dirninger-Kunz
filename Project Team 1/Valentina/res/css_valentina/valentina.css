@@ -1,0 +1,130 @@
+/* fonts */
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  font-family: "Dancing Script", cursive; }
+
+#wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 80%; }
+
+.flex {
+  display: flex; }
+
+/* HEADER */
+nav,
+#footer {
+  background-color: #a6e3e9;
+  padding: 0.5rem;
+  margin: 0 auto; }
+
+nav li {
+  display: inline;
+  padding: 0.5rem;
+  transition: all 0.5s;
+  cursor: pointer; }
+
+li a {
+  font-family: "Karla", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 1rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  position: relative;
+  transition: 0.5s; }
+
+li a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -1rem;
+  transition: 0.5s; }
+
+li:hover a {
+  text-shadow: 0.125rem 0.125rem #ffe2e2;
+  transition: 0.5s;
+  padding-right: 1rem; }
+
+li:hover a:after {
+  opacity: 1;
+  right: 0; }
+
+/* main content */
+main {
+  flex-direction: column;
+  justify-content: center; }
+
+#container {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem; }
+
+.box {
+  width: 45%;
+  padding: 1rem;
+  position: relative; }
+
+.box h2 {
+  color: #ffc7c7;
+  font-family: "Dancing Script", cursive; }
+
+.box p {
+  text-align: justify;
+  font-family: "Karla", sans-serif; }
+
+.box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #defcfc;
+  opacity: 0;
+  transition: .5s ease; }
+
+.box:hover .overlay {
+  opacity: 1;
+  cursor: pointer; }
+
+.text {
+  font-family: "Dancing Script", cursive;
+  color: #FFFFFF;
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+/* FOOTER */
+#footer {
+  justify-content: center; }
+
+#footer p {
+  font-family: "Karla", sans-serif;
+  color: #f6f6f6;
+  font-size: 0.75rem; }
+
+/* media queries */
+@media screen and (max-width: 600px) {
+  #wrapper {
+    width: 100%; }
+
+  .box {
+    width: 100%; } }
+
+/*# sourceMappingURL=valentina.css.map */

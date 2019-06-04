@@ -1,0 +1,365 @@
+$pink: #ffc7c7;
+$lightpink: #ffe2e2;
+$babyblue: #defcfc;
+$white: #f6f6f6;
+$blue: #a6e3e9;
+$lightblue: #e4f6f8;
+$ultrawhite: #FFFFFF;
+/* fonts */
+$karla: 'Karla',
+sans-serif;
+$dancing: 'Dancing Script',
+cursive;
+
+body {
+    font-size: 16px;
+    font-family: $karla;
+}
+
+
+
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+nav,
+#footer {
+    background-color: $blue;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+nav li {
+    display: inline;
+    padding: 0.5rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+li a {
+    font-family: $karla;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 1rem;
+    color: $ultrawhite;
+    font-weight: 700;
+    position: relative;
+    transition: 0.5s;
+}
+
+li a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -1rem;
+    transition: 0.5s;
+}
+
+li:hover a{
+    text-shadow: 0.125rem 0.125rem $lightpink;
+    transition: 0.5s;
+    padding-right: 1rem;
+}
+
+li:hover a:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* IDENTITY */
+#identity {
+    flex-direction: column;
+}
+
+#banner {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $lightpink;
+    padding-bottom: 1rem;
+}
+
+#banner h1,
+#banner p {
+    color: $ultrawhite;
+    text-shadow: 0.125rem 0.125rem $blue;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#banner h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#banner p {
+    font-size: 1.3rem;
+}
+
+#row {
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.box {
+    width: 20%;
+    padding: 1rem;
+}
+
+.box:hover {
+    flex-grow: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+;
+
+#white {
+    background-color: $white;
+}
+
+#pink {
+    background-color: $pink;
+}
+
+#lightpink {
+    background-color: $lightpink;
+}
+
+#babyblue {
+    background-color: $babyblue;
+}
+
+#blue {
+    background-color: $blue;
+}
+
+#lightblue {
+    background-color: $lightblue;
+    flex-grow: 1;
+}
+
+#image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#works,
+#quote,
+#contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#works h2,
+#contact h2 {
+    text-transform: uppercase;
+    text-shadow: 0.125rem 0.125rem $blue;
+}
+
+/* my works */
+#works {
+    align-items: center;
+}
+
+#works h2 {
+    color: $ultrawhite;
+}
+
+#works {
+    background-color: $lightpink;
+}
+
+#works ul {
+    justify-content: space-around;
+}
+
+#works li {
+    list-style: none;
+    padding-right: 0.5rem;
+}
+
+
+#works li a:hover,
+#contact a:hover {
+    text-shadow: 0.125rem 0.125rem $blue;
+}
+
+/* quote */
+#quote {
+    background-color: $lightblue;
+    align-items: center;
+}
+
+#quote blockquote {
+    text-align: center;
+    width: 50%;
+    font-family: $dancing;
+    font-size: 2rem;
+}
+
+/* contact */
+#contact {
+    background-color: $lightpink;
+    align-items: center;
+}
+
+#contact a {
+    text-decoration: none;
+
+}
+
+#contact h2,
+#contact a {
+    color: $ultrawhite;
+}
+
+/* button */
+
+#button {
+    padding: 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    width: 30%;
+    cursor: pointer;
+    background-color: $blue;
+    transition: all 0.5s;
+
+}
+
+#button span {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $ultrawhite;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -1rem;
+    transition: 0.5s;
+}
+
+#button:hover span {
+    padding-right: 1.5rem;
+}
+
+#button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* modal */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 7rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: $pink;
+    margin: auto;
+    padding: 4rem;
+    width: 80%;
+}
+
+#close {
+    padding-right: 1rem;
+    color: $ultrawhite;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: $blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content a {
+    text-decoration: none;
+    color: $ultrawhite;
+}
+
+
+.modal-content a:hover {
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+#footer {
+    justify-content: center;
+}
+
+#footer p {
+    font-family: $karla;
+    color: $white;
+    font-size: 0.75rem;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+
+    #wrapper {
+        width: 100%;
+    }
+
+    #row {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    #button {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    
+    #modal {
+        padding-top: 20rem;
+    }
+}

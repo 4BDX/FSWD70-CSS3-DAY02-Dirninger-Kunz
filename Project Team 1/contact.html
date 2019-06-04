@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- HEADER -->
+        <div class="topnav" id="myTopnav">
+            <div id="topnav-first-line">
+                <div id="menueContainer">
+                    <a href="index.html">Team</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <!-- form -->
+        <div id="container" class="flex">
+        <div id="form" class="flex">
+            <h1>Get in touch with us</h1>
+            <form class="flex">
+                <div id="row" class="flex">
+                    <div id="col1" class="flex"><label for="name">Your name:</label>
+                        <input type="text" placeholder="Enter Your First Name" id="firstname">
+                        <label for="country">Your Country:</label>
+                        <select id="countries">
+                            <option class="country" value="austria">Austria</option>
+                            <option class="country" value="brazil">Brazil</option>
+                            <option class="country" value="greece">Greece</option>
+                            <option class="country" value="hungary">Italy</option>
+                            <option class="country" value="scotland">Scotland</option>
+                            <option class="country" value="serbia">Serbia</option>
+                        </select>
+                    </div>
+                    <div id="col2" class="flex">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" placeholder="Enter Your Last Name">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="Enter Your Email">
+                    </div>
+                </div>
+                <div id="button-container" class="flex">
+                    <button type="button" id="btn">Send</button>
+                </div>
+                <p id="result"></p>
+            </form>
+        </div>
+    </div>
+        <!-- FOOTER -->
+        <div id="footer" class="flex">
+            <span> &copy; created by CodeFactory Vienna</span>
+        </div>
+    </div>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    // email function
+
+    var btn = document.getElementById("btn");
+    var result = document.getElementById("result");
+
+    function sendEmail() {
+        var firstName = document.getElementById("firstname").value;
+        var lastName = document.getElementById("lastname").value;
+        var email = document.getElementById("email").value;
+        if (firstName == "") {
+            document.getElementById("result").innerHTML = "Please enter your first name!";
+        } else if (lastName == "") {
+            document.getElementById("result").innerHTML = "Please enter your last name!";
+        } else if (email == "") {
+            document.getElementById("result").innerHTML = "Please enter your email!";
+        } else {
+            document.getElementById("result").innerHTML = "Thank you " + firstName + " " + lastName + " your message has been sent!";
+        }
+
+    }
+
+    btn.addEventListener("click", sendEmail, false);
+    </script>
+</body>
+
+</html>

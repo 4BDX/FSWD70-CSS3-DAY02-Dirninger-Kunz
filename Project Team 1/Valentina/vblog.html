@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="res/css_valentina/vblog.css">
+   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Karla:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- CONTAINER -->
+    <div id="wrapper">
+        <!-- HEADER AND NAV -->
+        <div id="header">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutvalentina.html">About Me</a></li>
+                    <li><a href="vblog.html">Blog</a></li>
+                    <li><a href="valentina.html">Story</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- MAIN CONTENT -->
+        <h1>BLOGGING</h1>
+        <main class="flex">
+            <div id="main-post">
+                <h2>From Eden</h2>
+                <p><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img src="res/img_valentina/venus_2.jpg" alt="Venus">
+                <p>Curabiture vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque.
+                    Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.
+                    <span id="breakpoint"></span> </p>
+                <p id="more">Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</p>
+                <p id="button">Read More</p>
+            </div>
+            <div id="other-posts">
+                <h2>Previous Posts</h2>
+                <div class="post">
+                    <div class="text">
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="text">
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="text">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <div id="footer" class="flex">
+            <p>©Copyright Valentina Panetta 2019</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="res/js_valentina/vale_data.json"></script>
+    <script>
+    for (i = 0; i < posts.length; i++) {
+        document.getElementsByClassName("post")[i].innerHTML += "<img src=" + posts[i].image + ">";
+    }
+    for (i = 0; i < posts.length; i++) {
+        document.getElementsByClassName("text")[i].innerHTML = "<h3>" + posts[i].title + "</h3>" + "<p>" + posts[i].description + "</p>" + "<a>" + posts[i].link + "</a>";
+    }
+
+    var more = document.getElementById("more");
+    var btn = document.getElementById("button");
+    var bkPoint = document.getElementById("breakpoint");
+
+    function btnFunction() {
+
+
+        if (bkPoint.style.display === "none") {
+            bkPoint.style.display = "inline";
+            btn.innerHTML = "Read More";
+            more.style.display = "none";
+        } else {
+            bkPoint.style.display = "none";
+            btn.innerHTML = "Read Less";
+            more.style.display = "inline";
+        }
+    }
+
+    btn.addEventListener('click', btnFunction, false);
+    </script>
+</body>
+
+</html>

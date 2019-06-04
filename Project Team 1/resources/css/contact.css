@@ -1,0 +1,141 @@
+body {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Karla', sans-serif; }
+
+#wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+  width: 90%; }
+
+.flex {
+  display: flex; }
+
+/* HEADER */
+#myTopnav {
+  width: 100%; }
+
+.topnav {
+  overflow: hidden;
+  background-color: #163172;
+  width: 100%; }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1rem; }
+
+.topnav a:hover {
+  background-color: #d6e4f0;
+  color: #163172; }
+
+.topnav .icon {
+  visibility: hidden; }
+
+/* form */
+#container {
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+#form h1 {
+  color: #163172;
+  font-weight: 700;
+  font-size: 4rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem #999; }
+
+#form {
+  background-color: #f6f6f6;
+  margin: 1rem;
+  padding: 1rem;
+  opacity: 0.9;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  border: solid 0.2rem #d6e4f0;
+  box-shadow: 0.1rem 0.1rem 0.1rem #999; }
+
+form {
+  justify-content: space-between;
+  flex-direction: column; }
+
+#row {
+  justify-content: space-around; }
+
+#button-container {
+  justify-content: center; }
+
+#btn {
+  background-color: #163172;
+  color: #f6f6f6;
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 1rem;
+  box-shadow: 0 0.125rem #666; }
+
+#btn:active {
+  background-color: #1e56a0;
+  transform: translateY(0.3rem); }
+
+#col1,
+#col2 {
+  width: 45%;
+  margin: 0.5rem;
+  padding: 1rem;
+  flex-direction: column; }
+
+label,
+input {
+  padding: 0.5rem; }
+
+#form h1 {
+  text-align: center; }
+
+#result {
+  color: #163172;
+  font-weight: 700;
+  text-align: center; }
+
+/* FOOTER */
+#footer {
+  margin-top: 2rem;
+  height: 3rem;
+  width: 100%;
+  background-color: #163172;
+  justify-content: center; }
+  #footer span {
+    color: #f6f6f6;
+    font-size: 0.5rem;
+    padding: 1rem; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+  #wrapper {
+    width: 100%; }
+
+  .topnav a:not(:first-child) {
+    display: none; }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+    visibility: visible; }
+
+  #row {
+    flex-direction: column;
+    align-items: center; }
+
+  #form {
+    width: 85%; }
+
+  #form h1 {
+    font-size: 3rem; } }
+
+/*# sourceMappingURL=contact.css.map */

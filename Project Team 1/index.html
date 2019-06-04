@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla|Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- HEADER -->
+        <div class="topnav" id="myTopnav">
+            <div id="topnav-first-line">
+                <div id="menueContainer">
+                    <a href="index.html">Team</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="team-section">
+            <div id="banner">
+                <img src="resources/img/header.png">
+            </div>
+            <!--
+                <h1>Our Team</h1> -->
+            <div id="presentation" class="flex">
+                <div class="team">
+                    <div class="background"></div>
+                    <div class="content">
+                        <div class="portrait">
+                        </div>
+                        <div class="text"></div>
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="background"></div>
+                    <div class="content">
+                        <div class="portrait">
+                        </div>
+                        <div class="text"></div>
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="background"></div>
+                    <div class="content">
+                        <div class="portrait">
+                        </div>
+                        <div class="text"></div>
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="background"></div>
+                    <div class="content">
+                        <div class="portrait">
+                        </div>
+                        <div class="text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div id="footer" class="flex">
+            <span> &copy; created by CodeFactory Vienna</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="resources/js/data.json"></script>
+    <script>
+    for (i = 0; i < teamMembers.length; i++) {
+        document.getElementsByClassName("portrait")[i].innerHTML += "<img src=" + teamMembers[i].img + ">";
+    }
+
+    for (i = 0; i < teamMembers.length; i++) {
+        document.getElementsByClassName("text")[i].innerHTML = "<h2>" + teamMembers[i].name + "</h2>" + "<p>" + teamMembers[i].description + "</p>" + "<p>" + teamMembers[i].descriptionTwo + "</p>" + "<a href=" + teamMembers[i].link + ">" + "My Page</a>";
+    }
+
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+
+</html>
